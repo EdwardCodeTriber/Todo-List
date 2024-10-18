@@ -1,5 +1,16 @@
 # React + Vite
 
+## Overview
+- This application was made as apractice to understand how to
+ intergrade node with mongo & react
+
+## Installation
+- npm install axios, react-icons
+
+## To run 
+- npm run dev
+
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
