@@ -9,11 +9,12 @@ const Home = () => {
     axios.get('http://localhost:3001/get')
     .then(result => setTodos(result.data))
     .catch(err => console.log(err))
-  })
+  }, [])
 
   return (
     <div className="home">
       <h2> Todo List</h2>
+      {/*imported component */}
       <Create />
 
       {todos.length === 0 ? (
@@ -21,7 +22,7 @@ const Home = () => {
           <h2>No record</h2>
         </div>
       ) : (
-        todos.map((todo) => <div>{todo.task}</div>)
+        todos.map((todo) => <div className="task">{todo.task}</div>)
       )}
     </div>
   );
